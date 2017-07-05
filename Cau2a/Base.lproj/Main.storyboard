@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cau2a" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AWs-tr-QgZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="183"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="X1W-bI-7ng"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AKL-1P-a90">
+                                <rect key="frame" x="24" y="191" width="327" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uj3-OC-oKt">
+                                <rect key="frame" x="24" y="420" width="327" height="30"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f68-Iq-9L6">
+                                <rect key="frame" x="0.0" y="229" width="375" height="183"/>
+                                <color key="backgroundColor" red="0.59872317310000001" green="0.8489146233" blue="0.99919575449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="UCr-80-sah">
+                                <rect key="frame" x="178" y="81" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="kib-df-8gq">
+                                <rect key="frame" x="177" y="310" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40X-IP-zya">
+                                <rect key="frame" x="140" y="534" width="96" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="  Load image  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ei7-EY-hnl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AKL-1P-a90" firstAttribute="top" secondItem="AWs-tr-QgZ" secondAttribute="bottom" constant="8" id="3gE-gN-IW8"/>
+                            <constraint firstAttribute="trailing" secondItem="AWs-tr-QgZ" secondAttribute="trailing" id="60i-uo-5kA"/>
+                            <constraint firstItem="Uj3-OC-oKt" firstAttribute="top" secondItem="f68-Iq-9L6" secondAttribute="bottom" constant="8" id="ILo-xk-bb0"/>
+                            <constraint firstItem="AWs-tr-QgZ" firstAttribute="trailing" secondItem="f68-Iq-9L6" secondAttribute="trailing" id="MtO-kU-aNg"/>
+                            <constraint firstItem="f68-Iq-9L6" firstAttribute="top" secondItem="AKL-1P-a90" secondAttribute="bottom" constant="8" symbolic="YES" id="WVf-zy-QgA"/>
+                            <constraint firstItem="AWs-tr-QgZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wnx-m3-svP"/>
+                            <constraint firstItem="AWs-tr-QgZ" firstAttribute="centerX" secondItem="AKL-1P-a90" secondAttribute="centerX" id="bpp-oq-7RR"/>
+                            <constraint firstItem="AKL-1P-a90" firstAttribute="centerX" secondItem="kib-df-8gq" secondAttribute="centerX" id="g2j-BA-UwQ"/>
+                            <constraint firstItem="Uj3-OC-oKt" firstAttribute="centerX" secondItem="40X-IP-zya" secondAttribute="centerX" id="g5N-ci-SfI"/>
+                            <constraint firstItem="AKL-1P-a90" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="gz0-We-GAv"/>
+                            <constraint firstItem="AWs-tr-QgZ" firstAttribute="centerY" secondItem="UCr-80-sah" secondAttribute="centerY" id="hZZ-Fj-WIx"/>
+                            <constraint firstItem="UCr-80-sah" firstAttribute="centerX" secondItem="AKL-1P-a90" secondAttribute="centerX" id="iqP-ab-pMt"/>
+                            <constraint firstItem="40X-IP-zya" firstAttribute="top" secondItem="Uj3-OC-oKt" secondAttribute="bottom" constant="84" id="iwM-AV-aeJ"/>
+                            <constraint firstItem="AWs-tr-QgZ" firstAttribute="leading" secondItem="f68-Iq-9L6" secondAttribute="leading" id="p8K-RY-OMc"/>
+                            <constraint firstItem="AWs-tr-QgZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pW3-k7-wF3"/>
+                            <constraint firstItem="f68-Iq-9L6" firstAttribute="centerY" secondItem="kib-df-8gq" secondAttribute="centerY" id="r0p-zP-1fb"/>
+                            <constraint firstItem="AKL-1P-a90" firstAttribute="trailing" secondItem="Uj3-OC-oKt" secondAttribute="trailing" id="rZd-Rf-68v"/>
+                            <constraint firstItem="kib-df-8gq" firstAttribute="top" secondItem="AKL-1P-a90" secondAttribute="bottom" constant="89" id="rdd-BC-2rh"/>
+                            <constraint firstItem="AKL-1P-a90" firstAttribute="leading" secondItem="Uj3-OC-oKt" secondAttribute="leading" id="so3-zz-Yyw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image1" destination="AWs-tr-QgZ" id="heP-31-KLe"/>
+                        <outlet property="image2" destination="f68-Iq-9L6" id="iuj-Do-o05"/>
+                        <outlet property="spinner1" destination="UCr-80-sah" id="uva-TD-4IC"/>
+                        <outlet property="spinner2" destination="kib-df-8gq" id="1S9-Gc-mC6"/>
+                        <outlet property="url1" destination="AKL-1P-a90" id="ufL-Ao-vKC"/>
+                        <outlet property="url2" destination="Uj3-OC-oKt" id="syV-fz-3BO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
